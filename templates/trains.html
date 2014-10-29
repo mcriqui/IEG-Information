@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IEG Information</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width-device-width, initial-scale=1"> 
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ 	<!-- <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> -->
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="jumbotron row header-row">
+      <h1>IBM's Institute for Electronic Government</small></h1>
+      <p>Coming to our center? Here's some helpful information. Can't wait to see you!</p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+  	<div class="row">
+  		 <div class="col-lg-4", style-background-color:>
+  		 	<dl class="bg-info">
+  		 		<dt>Metro Center: Lower Platform</dt>
+  		 		{% for train in metro_center_lower %}
+  		 		<dd>Train heading to: {{train.destination_name}} in {{train.minutes_to_train}}</dd>
+  		 		{% endfor %}
+  		 	</dl>
+  		 </div>
+  		<div class="col-lg-4">
+  		 	<dl class="bg-info"> 
+  		 		<dt>Metro Center: Upper Platform</dt>
+  		 		{% for train in metro_center_upper %}
+  		 		<dd>Train heading to: {{train.destination_name}} in {{train.minutes_to_train}}</dd>
+  		 		{% endfor %}
+  		 	</dl>
+  		 </div>
+  		 <div class="col-lg-4">
+  		 	<dl class="bg-info">
+  		 		<dt>McPherson Square</dt>
+  		 		{% for train in mcpherson_square %}
+  		 		<dd>Train heading to: {{train.destination_name}} in {{train.minutes_to_train}}</dd>
+  		 		{% endfor %}
+  		 	</dl>
+  		 </div>
+  	</div>
+  </div>
+
+  <div class="container-fluid">
+  	<div class = "row">
+  		<h3>Weather</h3>
+  		<div class="col-lg-8">
+  			<p>Today's weather is {{weather}}.</p>
+  			<p>The current temperature is {{temperature}}</p>
+  		</div>
+  		<div class="col-lg-4">
+  			<p>(Insert weather image)</p>	
+  		</div>
+  	</div>
+  </div>
+
+<!-- <h3>Metro Updates</h3>
+	<div id = "metro_center_lower">
+		<ul>
+		METRO CENTER LOWER
+		{% for train in metro_center_lower %}
+			<li>Train heading to: {{train.destination_name}} in {{train.minutes_to_train}}</li>
+		{% endfor %}
+		</ul>
+	</div>
+
+
+	<div id="metro_center_upper">
+		<ul>
+		METRO CENTER UPPER
+		{% for train in metro_center_upper %}
+			<li>Train heading to: {{train.destination_name}} in {{train.minutes_to_train}}</li>
+		{% endfor %}
+		</ul>
+	</div>
+
+	<div id="mcpherson_square">
+		<ul>
+		MCPHERSON SQUARE
+		{% for train in metro_center_upper %}
+			<li>Train heading to: {{train.destination_name}} in {{train.minutes_to_train}}</li>
+		{% endfor %}
+		</ul>
+	</div>
+
+<div>
+
+<h3>Weather Information</h3>
+
+	<p>Today's weather is {{weather}} and the temperature is {{temperature}}.</p>
+
+</div> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
