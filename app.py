@@ -5,6 +5,7 @@ from weather.service import Weather_Underground
 from wmata.models import Train
 from weather.models import Weather 
 import requests 
+import os
 
 
 app = Flask(__name__)
@@ -71,7 +72,9 @@ def show_current_conditions():
 	weather = current_observation.get('weather')
 	return str(temperature), weather
 
-
+port = os.getenv('VCAP_APP_PORT', '5000')
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(host='0.0.0.0', port=int(port), debug=True)
+
+
