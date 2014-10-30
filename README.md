@@ -1,4 +1,4 @@
-whats-the-wmata
+IEG-Information
 ===============
 
-Funning with WMATA data
+A site with real time updates with relevant information for IEG event attendees.

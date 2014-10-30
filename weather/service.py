@@ -11,6 +11,4 @@ class Weather_Underground:
         url = 'http://api.wunderground.com/api/{0}/conditions/q/DC/Washington.json'.format(Weather_API_Key)
         weather_information = requests.get(url).json()
         return weather_information
-    # current = weather_information.get('current_observation')
-    # temp = current.get('temp_f')
-    # return "The temperature is {0}".format(temp)
+   
