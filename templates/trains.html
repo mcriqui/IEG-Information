@@ -6,42 +6,41 @@
   	<meta name="viewport" content="width-device-width, initial-scale=1"> 
   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="static/style.css" rel="stylesheet" type="text/css">
- 	<!-- <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> -->
+ 	  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+  
+
 </head>
 
 <body>
 
-  <div class="container-fluid">
-    <div class="jumbotron">
-      <div class="jumbotron_picture">
-      <h1>IBM's Institute for Electronic Government</small></h1>
+  <div class="container-fluid jumbotron">  
+      <h1>IBM's Institute for Electronic Government</h1>
       <p>Coming to our center? Here's some helpful information.</p>
-      </div>
-    </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="jumbotron">
+  <div class="container-fluid information">
     <div class="row">
-      <div class="col-lg-4">
-        <img src="http://www.cpexecutive.com/wp-content/uploads/2012/06/060512-Hamilton-Square-DC.jpg" class="img-thumbnail">
+      <div class="col-lg-5">
+          <img src="https://lh6.googleusercontent.com/q0CXP6kw9yTiDNkB2pdTQExys_Ih_e0QVb02ITBaZbyeWi_bVTYp_emueJQWp0K9kCaCqorK-kO27zhhQlutXjUxJffpLlcUSDl9ujF_nfRoHiXKJZw" class="img-responsive">
       </div>
-      <div class="col-lg-8">
-        <h3>Location:</h3>
+      <div class="col-lg-7">
+        <h2>Basic Information:</h2>
         <p>We're located on the 2nd floor of the Hamilton Square building.</p>
         <p>600 14th St, NW</p>
         <p>Washington, DC 20005</p>
         <p>The enterance to the building is between two restaurants: MXDC and the Hamilton.</p>
       </div>
-      </div>
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class ="jumbotron">
-  	<div class="row">
-        <h3>Metro Information</h3>
-        <p>The IEG is located in the heart of downtown Washington, DC easily accessible by metro. The closest Metro stops are McPherson Square- orange, blue and silver lines- and Metro Center, red, orange, blue and silver lines.</p>
+
+  <div class="container-fluid metro">
+  	<div class="row ">
+        <h2>How are you getting here?</h2>
+        <h4>METRO</h4>
+        <p>The IEG is located in the heart of downtown Washington, DC easily accessible by metro.</p>
+        <p>The closest Metro stops are McPherson Square- orange, blue and silver lines- and Metro Center, red, orange, blue and silver lines.</p>
         <p><strong>Don't miss your train! Here's when the next trains are coming:</strong></p>
        <div class="col-lg-4">
           <dl>
@@ -67,24 +66,18 @@
   		 		{% endfor %}
   		 	</dl>
         </div>
-      </div>
   	</div>
   </div>
 
-  <div class="container-fluid">
-  	<div class = "jumbotron row">
+  <div class="container-fluid weather">
   		<h3>Weather</h3>
   		<div class="col-lg-8">
   			 <p>Today's weather is <strong>{{weather}}</strong>.</p>
   			 <p>The current temperature is <strong>{{temperature}}</strong></p>
   		</div>
   		<div class="col-lg-4">
-  			<p>(Insert weather image)</p>	
+  			<img src>
   		</div>
-  	</div>
-  </div>
-  <div class="container">
-    <img src="images/AfricaJam.jpg"
   </div>
 
 
