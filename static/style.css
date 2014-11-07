@@ -1,5 +1,107 @@
-.container-fluid{
-  background-color: gray;
-  padding:2em;
-  margin: 2em
+
+.welcome{
+  background-color: white;
+  color: #1253A4;
+  padding: 1em;
+}
+
+.title{
+  font-size: 72px;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 900
+}
+
+.opening_discription{
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 1em;
+  font-weight: 200
+}
+
+.location{
+  background-color: #1253A4;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-left: 0;
+  padding-right: 0;
+  color:white;
+}
+
+.location_title{
+  text-align: center;
+  text-transform:uppercase;
+  font-weight: 500;
+  padding-bottom: 1em
+
+}
+
+.location_description{
+  text-align: center;
+  font-weight:100;
+  font-size: 20px
+}
+
+.metro{
+  background-color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+}
+
+.metro_title{
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 2em;
+  margin-bottom: 4em;
+  text-align: center
+}
+
+.metro_info{
+  font-weight:150;
+  text-align: center;
+  padding-left:2em;
+  padding-right:2em;
+  font-style: italic;
+  padding-bottom: 2em
+}
+
+.miss_train{
+  padding-left: 2em;
+  padding-bottom: 2em;
+  text-align: center
+}
+
+.upper{
+  color:;
+}
+
+.lower{
+
+}
+
+.mcpherson{
+
+}
+
+.weather{
+  background-color: #1253A4;
+  color:white;
+}
+
+.weather_title{
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 2em;
+  margin-bottom: 4em;
+  text-align: center;
+  padding-top:2em;
+}
+
+.weather_info{
+ font-size: 20px;
+ font-weight: 100;
+ text-align: center
 }
