@@ -11,14 +11,17 @@
   padding-top: 1em;
   padding-bottom: 1em;
   text-transform: uppercase;
-  font-weight: 900
+  font-weight: 900;
+  font-family: 'Arvo'
 }
+
 
 .opening_discription{
   font-size: 35px;
   text-align: center;
   padding-bottom: 1em;
-  font-weight: 200
+  font-weight: 200;
+  font-family: 'PT Sans'
 }
 
 .location{
@@ -28,26 +31,30 @@
   padding-left: 0;
   padding-right: 0;
   color:white;
+  font-family: 'PT Sans'
 }
 
 .location_title{
   text-align: center;
   text-transform:uppercase;
   font-weight: 500;
-  padding-bottom: 1em
+  padding-bottom: 1em;
+  font-family: 'Arvo'
 
 }
 
 .location_description{
   text-align: center;
   font-weight:100;
-  font-size: 20px
+  font-size: 20px;
+  font-family: 'PT Sans'
 }
 
 .metro{
-  background-color: white;
+  background-color: #1253A4;
   padding-top: 3em;
   padding-bottom: 3em;
+  color:white;
 
 }
 
@@ -56,22 +63,25 @@
   font-weight: 500;
   padding-left: 2em;
   margin-bottom: 4em;
-  text-align: center
+  text-align: center;
+  font-family: 'Arvo'
 }
 
 .metro_info{
-  font-weight:150;
+  font-weight:100;
   text-align: center;
   padding-left:2em;
   padding-right:2em;
   font-style: italic;
-  padding-bottom: 2em
+  padding-bottom: 2em;
+  font-family: 'PT Sans'
 }
 
 .miss_train{
   padding-left: 2em;
   padding-bottom: 2em;
-  text-align: center
+  text-align: center;
+  font-family: 'PT Sans'
 }
 
 .upper{
@@ -87,21 +97,46 @@
 }
 
 .weather{
-  background-color: #1253A4;
-  color:white;
+  background-color: white;
+  padding-top:7em;
+  padding-bottom: 7em
 }
 
 .weather_title{
+  text-transform: uppercase;
+  font-weight: 500;
+  /*margin-bottom: 4em;*/
+  text-align: center;
+  padding-top:2em;
+  padding-bottom: 2em;
+  font-family: 'Arvo'
+}
+
+.weather_info{
+ font-size: 20px;
+ font-weight: 100;
+ text-align: center;
+ font-family: 'PT Sans';
+}
+
+.weather_icon{
+  padding-bottom: 2em
+}
+
+.food_title{
   text-transform: uppercase;
   font-weight: 500;
   padding-left: 2em;
   margin-bottom: 4em;
   text-align: center;
   padding-top:2em;
+  font-family: 'Arvo'
 }
-
-.weather_info{
- font-size: 20px;
- font-weight: 100;
- text-align: center
+.food_info{
+  font-weight:100;
+  text-align: center;
+  padding-left:2em;
+  padding-right:2em;
+  padding-bottom: 3em;
+  font-family: 'PT Sans';
 }
