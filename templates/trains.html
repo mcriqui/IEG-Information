@@ -2,12 +2,13 @@
 <html>
 <head>
   <title>IEG Information</title>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1"> 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="static/style.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+
 
   <!-- <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> -->
 </head>
@@ -20,7 +21,7 @@
 
 <div class="welcome">
   <div class="container">
-    <h1 class="title">IBM's Institute for Electronic Government</small></h1>
+    <h1 class="title">IBM's Institute for Electronic Government</h1>
     <p class = "opening_discription">Coming to our center? Here's some helpful information.</p>
   </div>
 </div>
@@ -29,7 +30,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6">
-      <img src="http://i.imgur.com/PEuSKUc.png" title="source: imgur.com" class="img-responsive"/>
+      <img src="http://i.imgur.com/PEuSKUc.png" title="source: imgur.com" class="img-responsive" alt="Map of the IEG"/>
       </div>
       <div class="col-lg-6">
       <div class="location_title">  
@@ -56,16 +57,15 @@
       <h2>Weather</h2>
       </div>
        <div class="weather_icon">
-         <img src="{{icon_url}}" class="center-block img-responsive"/>
+        <img src="{{icon_url}}" class="center-block img-responsive" alt="Weather Icon"/>
         </div>
         <div class="weather_info">
          <p>Today's weather is <strong>{{weather}}</strong>.</p>
          <p>The current temperature is <strong>{{temperature}}</strong></p>
       </div>
-      </div>
     </div>
   </div>
-</div>  
+</div> 
 
 <div class ="metro">
   <div class="container-fluid">
@@ -87,7 +87,7 @@
             {% for train in metro_center_lower %}
               <dd><strong>{{train.line_code}} </strong>line train heading to <strong>{{train.destination_name}}</strong> in <strong>{{train.minutes_to_train}}</strong> minutes.</dd>
             {% endfor %}
-            </dl>
+          </dl>
             </div>
        </div>
       <div class="col-lg-4">
@@ -124,11 +124,11 @@
     <div class ="row">
       <div class="col-lg-6">
         <h5>Sit Down Restaurants</h5>
-        <script src="https://embed.github.com/view/geojson/mcriqui/Maps/blob/master/test.geojson"></script>
+        <script src="https://embed.github.com/view/geojson/mcriqui/Maps/blob/master/test.geojson" type="application/javascript"></script>
       </div>
       <div class="col-lg-6">
-        <h5>Quick Good for Lunch Restaurants</h5>
-        <script src="https://embed.github.com/view/geojson/mcriqui/Maps/blob/master/sit_down_restaurants.json"></script>
+        <h5>Quick Places- Good for Lunch</h5>
+        <script language="JavaScript" src="https://embed.github.com/view/geojson/mcriqui/Maps/blob/master/sit_down_restaurants.json"></script>
       </div>
     </div>
   </div>

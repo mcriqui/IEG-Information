@@ -4,6 +4,8 @@ from wmata.service import WMATA
 from weather.service import Weather_Underground
 from wmata.models import Train
 from weather.models import Weather 
+from metro_incidents.models import metro_incidents
+from metro_incidents.service import metro_incidents
 import requests 
 import os
 
@@ -37,6 +39,12 @@ def get_info_for_one_mcpherson():
 	return mcpherson_list_of_trains
 
 weather_information = Weather_Underground(Weather_API_Key)
+
+incident_information = metro_incidents(API_Key)
+
+def get_incident_information():
+	incident_data = incident_information.get_incidents()
+	incident_list = []
 
 @app.route('/')
 def show_metro_times():
