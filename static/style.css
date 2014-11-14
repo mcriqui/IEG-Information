@@ -1,9 +1,11 @@
 
-.welcome{
-  background-color: white;
-  color: #1253A4;
-  padding: 1em;
+.menu{
+  font-family: 'Arvo';
+  text-transform:uppercase;
+  background-color: #30302F;
+  color:white;
 }
+
 
 .title{
   font-size: 72px;
@@ -12,7 +14,8 @@
   padding-bottom: 1em;
   text-transform: uppercase;
   font-weight: 900;
-  font-family: 'Arvo'
+  font-family: 'Arvo';
+  color: #1253A4;
 }
 
 
@@ -21,7 +24,8 @@
   text-align: center;
   padding-bottom: 1em;
   font-weight: 200;
-  font-family: 'PT Sans'
+  font-family: 'PT Sans';
+  color: #1253A4;
 }
 
 .location{
@@ -140,3 +144,4 @@
   padding-bottom: 3em;
   font-family: 'PT Sans';
 }
+
